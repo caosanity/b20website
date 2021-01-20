@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<!-- heading -->
+
+<head>
+    <title>CSCB20 Contact</title>
+</head>
+
+<body>
+    <h1 class="Title">CSCB20 - Introduction to Databases and Web Applications</h1>
+    <link href="static/styles/stylesheet.css" rel="stylesheet" type="text/css">
+    <header>
+        <h2 class="pagetitle">Contact</h2>
+    </header>
+    <!-- logout button -->
+    <div class="logout">
+        <a href="logout">Logout now!</a>
+    </div>
+    </select>
+    <div class="Contact-form">
+        <form action="/contact_instructor" method="POST" id="contact_instructor">
+            <select name="who" form="contact_instructor" required>
+                {% for instructor in instructor_info_str: %}
+                <option value={{instructor}}>{{instructor}}</option>
+                {% endfor %} </select>
+            <br></br>
+            <textarea class="form-control" name="feedback1" placeholder="What do you like about the instructor teaching?" required="" rows="4"></textarea>
+            <br>
+            <textarea class="form-control" name="feedback2" placeholder="What do you recommend the instructor to do to improve their teaching?" required="" rows="4"></textarea>
+            <br>
+            <textarea class="form-control" name="feedback3" placeholder="What do you like about the labs?" required="" rows="4"></textarea>
+            <br>
+            <textarea class="form-control" name="feedback4" placeholder="What do you recommend the lab instructors to do to improve their lab teaching?" required="" rows="4"></textarea>
+            <br>
+            <input type="submit" value="Send Remark Request" class="submit_button">
+        </form>
+    </div>
+    <nav class="navBar">
+        <strong></strong>
+        <ul>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="index.html" target="_blank">Home</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="calendar.html" target="_blank">Calendar</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="news.html" target="_blank">News</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="https://piazza.com/mail.utoronto.ca/winter2019/csb20/home" target="_blank">Discussion Board</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="https://markus.utsc.utoronto.ca/cscb20w19/?locale=en" target="_blank">MarkUs</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="lectures.html" target="_blank">Lectures</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="labs.html" target="_blank">Labs</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="assignments.html" target="_blank">Assignments</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="tests.html" target="_blank">Tests</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="resources.html" target="_blank">Resources</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="contact.html" target="_blank">Contact</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="videos.html" target="_blank">Videos</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="student.html" target="_blank">My grades</a></strong></h3>
+            </li>
+            <li>
+                <strong></strong>
+                <h3><strong><a href="instructor.html" target="_blank">Instructor</a></strong></h3>
+            </li>
+        </ul>
+    </nav>
+    <footer>
+        <hr>
+        <p>Please visit the <a href="http://web.cs.toronto.edu/" target="_blank">Faculty of Computer Science</a> at UofT to learn more about us</p>
+        <p>Site Design by Jeff Cao and Brendan Williams</p>
+        <ul class="navFooter">
+            <li>
+                <h5><a href="index.html" target="_blank">Home</a></h5>
+            </li>
+            <li>
+                <h5><a href="calendar.html" target="_blank">Calendar</a></h5>
+            </li>
+            <li>
+                <h5><a href="news.html" target="_blank">News</a></h5>
+            </li>
+            <li>
+                <h5><a href="https://piazza.com/mail.utoronto.ca/winter2019/csb20/home" target="_blank">Discussion Board</a></h5>
+            </li>
+            <li>
+                <h5><a href="https://markus.utsc.utoronto.ca/cscb20w19/?locale=en" target="_blank">MarkUs</a></h5>
+            </li>
+            <li>
+                <h5><a href="lectures.html" target="_blank">Lectures</a></h5>
+            </li>
+            <li>
+                <h5><a href="labs.html" target="_blank">Labs</a></h5>
+            </li>
+            <li>
+                <h5><a href="assignments.html" target="_blank">Assignments</a></h5>
+            </li>
+            <li>
+                <h5><a href="tests.html" target="_blank">Tests</a></h5>
+            </li>
+            <li>
+                <h5><a href="resources.html" target="_blank">Resources</a></h5>
+            </li>
+            <li>
+                <h5><a href="contact.html" target="_blank">Contact</a></h5>
+            </li>
+            <li>
+                <h5><a href="videos.html" target="_blank">Videos</a></h5>
+            </li>
+            <li>
+                <h5><a href="student.html" target="_blank">My grades</a></h5>
+            </li>
+            <li>
+                <h5><a href="instructor.html" target="_blank">Instructor</a></h5>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

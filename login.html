@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/static/stylesheet.css" type="text/css">
+{% block body %}
+{% if session['logged_in'] %}
+ 
+You're logged in already!
+<a href="home.html">Click</a>
+ <!--- if your're not logged in yet-->
+{% else %}
+<form action="/login" method="POST">
+<head>
+	<link href="static/styles/stylesheet.css"rel="stylesheet" type="text/css">
+	<title>CSCB20 Course Login</title>
+	<h1 class = "Title_login">CSCB20 - Introduction to Databases and Web Applications</h1>
+</head>
+<body>
+<header>
+	<h2 class = "pagetitle">Welcome to CSCB20. Please log in or create an account!</h2>
+</header>
+</div>
+<!--- login form-->
+<div class = "Core">
+<div class="login-form">
+<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="username" name="username">
+<label class="login-field-icon fui-user" for="login-name"></label></div>
+<div class="control-group">
+				<input type="password" class="login-field" value="" placeholder="password" name="password">
+<label class="login-field-icon fui-lock" for="login-pass"></label></div>
+<input type="submit" value="Log in" class="btn btn-primary btn-large btn-block">
+</div>
+<div>
+<div>
+</form>{% endif %}
+{% endblock %}
+<!--- sign up form-->
+<form action ="/add_user" method = "POST" id="sign_up">
+<h2>Sign up here!</h2>
+<input type="text" class="login-field" value="" placeholder="username" name="N_username">
+<label class="login-field-icon fui-user" for="login-name"></label></div>
+<div class="control-group">
+<input type="password" class="login-field" value="" placeholder="password" name="N_password">
+<label class="________temp________" for="login-pass"></label></div>
+<select name = "Occupation" form="sign_up" required >
+	<option value = "student">Student</option>
+	<option value = "instructor">Instructor</option>
+</select>
+<input type="submit" value="Sign up" class="submit_button">
+</form>
